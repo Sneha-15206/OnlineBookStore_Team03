@@ -1,7 +1,6 @@
 // script.js
 
 // Register validation
-
 // Store registered user in localStorage
 
 document.getElementById("registerForm")?.addEventListener("submit", function(e) {
@@ -11,7 +10,7 @@ document.getElementById("registerForm")?.addEventListener("submit", function(e) 
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
 
-
+//Validate all fields and confirm password match
 
   if (name.length < 3) {
     alert("Name must be at least 3 characters");
@@ -34,6 +33,8 @@ document.getElementById("registerForm")?.addEventListener("submit", function(e) 
 }
 
   alert("Validation Passed");
+
+//Store user after all validations pass
 
   const user = { name, email, password };
   localStorage.setItem("user", JSON.stringify(user));
