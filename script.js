@@ -2,7 +2,7 @@
 
 // Register validation
 // Store registered user in localStorage
-
+console.log("Registering user:",name, email);
 document.getElementById("registerForm")?.addEventListener("submit", function(e) {
   e.preventDefault();
   const name = document.getElementById("name").value.trim();
@@ -43,6 +43,7 @@ document.getElementById("registerForm")?.addEventListener("submit", function(e) 
 });
 
 // Login validation
+console.log("Login attempt by:",email);
 document.getElementById("loginForm")?.addEventListener("submit", function(e) {
   e.preventDefault();
   const email = document.getElementById("loginEmail").value.trim();
