@@ -1,16 +1,16 @@
 // script.js
-
+<<<<<<< HEAD
 // Register validation
-
+=======
 // Store registered user in localStorage
-
+>>>>>>> localstorage
 document.getElementById("registerForm")?.addEventListener("submit", function(e) {
   e.preventDefault();
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
 
-
+<<<<<<< HEAD
   if (name.length < 3) {
     alert("Name must be at least 3 characters");
     return;
@@ -27,7 +27,7 @@ document.getElementById("registerForm")?.addEventListener("submit", function(e) 
   }
 
   alert("Validation Passed");
-
+=======
   const user = { name, email, password };
   localStorage.setItem("user", JSON.stringify(user));
 
@@ -47,5 +47,5 @@ document.getElementById("loginForm")?.addEventListener("submit", function(e) {
   } else {
     alert("Invalid credentials");
   }
-
+>>>>>>> localstorage
 });
